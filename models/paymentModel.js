@@ -238,8 +238,8 @@ akila_initiatePayment: (data) => {
     billing_country: 'India',
   };
 
-  const workingKey = process.env.WORKING_KEY || 'YOUR_WORKING_KEY';
-  const accessCode = process.env.ACCESS_CODE || 'YOUR_ACCESS_CODE';
+  const workingKey = process.env.REQUEST_WORKING_KEY || 'YOUR_WORKING_KEY';
+  const accessCode = process.env.REQUEST_ACCESS_CODE || 'YOUR_ACCESS_CODE';
 
   const querystring = Object.entries(paymentData)
     .map(([key, val]) => `${key}=${encodeURIComponent(val)}`)
@@ -257,7 +257,7 @@ akila_initiatePayment: (data) => {
 },
  handleCCAvenueResponse: (encResp) => {
     try {
-      const workingKey = process.env.WORKING_KEY || 'YOUR_WORKING_KEY';
+      const workingKey = process.env.RESPONSE_WORKING_KEY || 'YOUR_WORKING_KEY';
       const decrypted = decrypt(encResp, workingKey);
       const paymentData = qs.parse(decrypted);
 
