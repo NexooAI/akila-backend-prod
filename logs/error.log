@@ -1,0 +1,408 @@
+2025-05-20T17:49:58.370Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-20T17:50:47.672Z [ERROR]: Error initializing Intro screens table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-21T08:45:28.364Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-21T18:30:00.683Z [ERROR]: Unknown column 'S.payment_frequency_id' in 'field list'
+2025-05-21T18:30:00.685Z [ERROR]: Error checking missed payments: Error: Unknown column 'S.payment_frequency_id' in 'field list'
+2025-05-22T15:52:13.254Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-23T17:55:12.333Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-23T17:59:03.177Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T17:59:03.179Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T17:59:59.258Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T17:59:59.259Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:00:49.252Z [ERROR]: Error creating payment: ReferenceError: investmentId is not defined
+2025-05-23T18:00:55.868Z [ERROR]: Error creating payment: ReferenceError: investmentId is not defined
+2025-05-23T18:02:06.329Z [ERROR]: Error creating payment: ReferenceError: investmentId is not defined
+2025-05-23T18:02:29.275Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:02:29.276Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:03:55.179Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:03:55.180Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:06:53.032Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:06:53.033Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:09:14.172Z [ERROR]: Error creating payment: ReferenceError: investmentId is not defined
+2025-05-23T18:19:10.939Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:19:10.940Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:20:09.917Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:20:09.918Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:20:19.478Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:20:19.479Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:22:45.775Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:22:45.776Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:24:00.398Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:24:00.400Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:24:35.906Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:24:35.907Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:30:00.302Z [ERROR]: Unknown column 'S.payment_frequency_id' in 'field list'
+2025-05-23T18:30:00.303Z [ERROR]: Error checking missed payments: Error: Unknown column 'S.payment_frequency_id' in 'field list'
+2025-05-23T18:32:10.194Z [ERROR]: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T18:32:10.197Z [ERROR]: Error adding payment: TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-23T20:29:31.713Z [ERROR]: (node:25156) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:32:12.996Z [ERROR]: (node:41648) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:33:48.129Z [ERROR]: (node:40764) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:35:50.484Z [ERROR]: (node:17596) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:39:06.133Z [ERROR]: (node:29872) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:41:43.259Z [ERROR]: (node:11940) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:44:41.207Z [ERROR]: (node:13116) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:46:30.229Z [ERROR]: (node:40912) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:47:05.961Z [ERROR]: (node:13232) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:49:26.991Z [ERROR]: Error: Callback function is not available with promise clients.
+    at PromisePool.query (E:\project\nexooAiProjects\jewllery_api_core\node_modules\mysql2\lib\promise\pool.js:38:13)
+    at Object.getAllTokens (E:\project\nexooAiProjects\jewllery_api_core\models\fcmModel.js:22:8)
+    at exports.getTokens (E:\project\nexooAiProjects\jewllery_api_core\controllers\notificationController.js:18:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:328:13)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+2025-05-23T20:49:29.898Z [ERROR]: Error: Callback function is not available with promise clients.
+    at PromisePool.query (E:\project\nexooAiProjects\jewllery_api_core\node_modules\mysql2\lib\promise\pool.js:38:13)
+    at Object.getAllTokens (E:\project\nexooAiProjects\jewllery_api_core\models\fcmModel.js:22:8)
+    at exports.getTokens (E:\project\nexooAiProjects\jewllery_api_core\controllers\notificationController.js:18:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:328:13)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+2025-05-23T20:50:14.480Z [ERROR]: (node:23996) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:50:20.057Z [ERROR]: Error: Callback function is not available with promise clients.
+    at PromisePool.query (E:\project\nexooAiProjects\jewllery_api_core\node_modules\mysql2\lib\promise\pool.js:38:13)
+    at Object.getAllTokens (E:\project\nexooAiProjects\jewllery_api_core\models\fcmModel.js:25:8)
+    at exports.getTokens (E:\project\nexooAiProjects\jewllery_api_core\controllers\notificationController.js:18:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:328:13)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+2025-05-23T20:50:47.811Z [ERROR]: (node:27644) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:52:31.886Z [ERROR]: (node:32060) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:53:09.540Z [ERROR]: (node:39156) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:53:51.440Z [ERROR]: (node:17336) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:54:19.545Z [ERROR]: (node:16180) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T20:55:21.822Z [ERROR]: Error: Callback function is not available with promise clients.
+    at PromisePool.query (E:\project\nexooAiProjects\jewllery_api_core\node_modules\mysql2\lib\promise\pool.js:38:13)
+    at Object.getAllTokens (E:\project\nexooAiProjects\jewllery_api_core\models\fcmModel.js:29:8)
+    at exports.getTokens (E:\project\nexooAiProjects\jewllery_api_core\controllers\notificationController.js:18:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:328:13)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+2025-05-23T20:57:22.803Z [ERROR]: Error: Callback function is not available with promise clients.
+    at PromisePool.query (E:\project\nexooAiProjects\jewllery_api_core\node_modules\mysql2\lib\promise\pool.js:38:13)
+    at Object.getAllTokens (E:\project\nexooAiProjects\jewllery_api_core\models\fcmModel.js:29:8)
+    at exports.getTokens (E:\project\nexooAiProjects\jewllery_api_core\controllers\notificationController.js:18:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:328:13)
+    at E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\project\nexooAiProjects\jewllery_api_core\node_modules\express\lib\router\index.js:346:12)
+2025-05-23T20:59:02.687Z [ERROR]: (node:39740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:00:37.144Z [ERROR]: (node:33212) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:00:47.244Z [ERROR]: (node:38824) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:01:14.842Z [ERROR]: (node:39208) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:01:57.473Z [ERROR]: (node:28976) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:03:01.812Z [ERROR]: (node:41344) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:03:12.167Z [ERROR]: (node:4040) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:03:20.167Z [ERROR]: (node:1748) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:03:25.285Z [ERROR]: (node:11528) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:03:30.028Z [ERROR]: (node:24688) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:05:02.022Z [ERROR]: (node:16124) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:05:12.326Z [ERROR]: (node:19412) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:05:51.175Z [ERROR]: (node:39644) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:06:28.292Z [ERROR]: (node:38300) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:09:32.797Z [ERROR]: (node:12736) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:10:35.497Z [ERROR]: (node:29248) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:10:51.223Z [ERROR]: (node:12316) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-23T21:11:19.909Z [ERROR]: Invalid token format: 1412312312
+2025-05-23T21:11:19.910Z [ERROR]: Error saving token: Error: Invalid token format
+2025-05-23T21:29:44.379Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-25T13:40:01.229Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-25T15:25:13.733Z [ERROR]: Unexpected error in getAllTokens: TypeError: db.promise is not a function
+2025-05-25T15:25:13.733Z [ERROR]: Error in getTokens: TypeError: db.promise is not a function
+2025-05-25T15:30:55.491Z [ERROR]: Error in saveOrUpdateToken: TypeError: db.promise is not a function
+2025-05-25T15:30:55.492Z [ERROR]: Error in saveToken: TypeError: db.promise is not a function
+2025-05-25T15:31:11.196Z [ERROR]: Error in getAllTokens: TypeError: db.promise is not a function
+2025-05-25T15:31:11.196Z [ERROR]: Error in getTokens: TypeError: db.promise is not a function
+2025-05-25T16:03:20.690Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:03:20.693Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:04:09.788Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:04:09.789Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:07:30.288Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:07:30.289Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:09:18.615Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:09:18.616Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:10:43.457Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:10:43.457Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:11:02.905Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:11:02.906Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:13:31.289Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:13:31.290Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:18:44.980Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:18:44.981Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:19:04.910Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:19:04.911Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:21:49.322Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:21:49.322Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:23:11.583Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:23:11.583Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:24:08.228Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:24:08.228Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:24:43.725Z [ERROR]: Error in get all collections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:24:43.725Z [ERROR]: Error in getAllCollections: SyntaxError: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-25T16:25:02.556Z [ERROR]: Error in get all collections: TypeError: JSON.stringify(...).map is not a function
+2025-05-25T16:25:02.556Z [ERROR]: Error in getAllCollections: TypeError: JSON.stringify(...).map is not a function
+2025-05-25T19:26:28.399Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-25T19:45:18.975Z [ERROR]: Error in create initial popup: Error: Unknown column 'title' in 'field list'
+2025-05-25T19:45:18.976Z [ERROR]: Error in createPopup: Error: Unknown column 'title' in 'field list'
+2025-05-25T19:46:19.460Z [ERROR]: Error in create initial popup: Error: Unknown column 'title' in 'field list'
+2025-05-25T19:46:19.460Z [ERROR]: Error in createPopup: Error: Unknown column 'title' in 'field list'
+2025-05-25T19:53:19.720Z [ERROR]: Error: Only image files are allowed!
+    at fileFilter (E:\project\nexooAiProjects\jewllery_api_core\controllers\initialPopupController.js:27:17)
+    at wrappedFileFilter (E:\project\nexooAiProjects\jewllery_api_core\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\project\nexooAiProjects\jewllery_api_core\node_modules\multer\lib\make-middleware.js:109:7)
+    at Multipart.emit (node:events:507:28)
+    at HeaderParser.cb (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\project\nexooAiProjects\jewllery_api_core\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (E:\project\nexooAiProjects\jewllery_api_core\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at IncomingMessage.ondata (node:internal/streams/readable:1007:22)
+    at IncomingMessage.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12)
+2025-05-25T19:53:37.351Z [ERROR]: Error: Only image files are allowed!
+    at fileFilter (E:\project\nexooAiProjects\jewllery_api_core\controllers\initialPopupController.js:27:17)
+    at wrappedFileFilter (E:\project\nexooAiProjects\jewllery_api_core\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\project\nexooAiProjects\jewllery_api_core\node_modules\multer\lib\make-middleware.js:109:7)
+    at Multipart.emit (node:events:507:28)
+    at HeaderParser.cb (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\project\nexooAiProjects\jewllery_api_core\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (E:\project\nexooAiProjects\jewllery_api_core\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at IncomingMessage.ondata (node:internal/streams/readable:1007:22)
+    at IncomingMessage.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12)
+2025-05-25T20:11:35.054Z [ERROR]: Error: Only image files are allowed!
+    at fileFilter (E:\project\nexooAiProjects\jewllery_api_core\controllers\collectionController.js:27:17)
+    at wrappedFileFilter (E:\project\nexooAiProjects\jewllery_api_core\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\project\nexooAiProjects\jewllery_api_core\node_modules\multer\lib\make-middleware.js:109:7)
+    at Multipart.emit (node:events:507:28)
+    at HeaderParser.cb (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\project\nexooAiProjects\jewllery_api_core\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (E:\project\nexooAiProjects\jewllery_api_core\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\project\nexooAiProjects\jewllery_api_core\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at IncomingMessage.ondata (node:internal/streams/readable:1007:22)
+    at IncomingMessage.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12)
+2025-05-26T11:32:06.713Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-26T12:14:44.172Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-26T14:44:25.796Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-26T15:30:39.862Z [ERROR]: Error creating Intro screen: Unknown column 'is_intro' in 'field list'
+2025-05-26T15:32:49.163Z [ERROR]: Error creating Intro screen: Unknown column 'is_intro' in 'field list'
+2025-05-26T17:02:40.695Z [ERROR]: Post creation failed: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-26T17:07:52.955Z [ERROR]: Post creation failed:
+2025-05-26T17:10:16.152Z [ERROR]: Post creation failed:
+2025-05-26T17:17:18.249Z [ERROR]: Post creation failed:
+2025-05-26T17:19:10.266Z [ERROR]: Post creation failed:
+2025-05-26T17:24:04.755Z [ERROR]: Post creation failed:
+2025-05-26T17:24:28.080Z [ERROR]: Post creation failed:
+2025-05-26T17:38:12.014Z [ERROR]: Post creation failed:
+2025-05-26T18:51:12.949Z [ERROR]: Error connecting to the database: Error: connect ETIMEDOUT
+2025-05-26T18:52:07.638Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:07.639Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:10.735Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:10.738Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:18.261Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:18.267Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:28.555Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:28.562Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:40.579Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:52:40.581Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:08.464Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:08.466Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:15.964Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:15.972Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:19.900Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:19.901Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:37.896Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:37.897Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:46.488Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T18:56:46.491Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:35.876Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:35.877Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:45.075Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:45.081Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:55.726Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:55.731Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:58.490Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:53:58.493Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T19:58:47.533Z [ERROR]: Error fetching dashboard data:
+2025-05-26T19:58:47.534Z [ERROR]: Error in getDashboardData:
+2025-05-26T20:00:44.069Z [ERROR]: Error fetching dashboard data:
+2025-05-26T20:00:44.070Z [ERROR]: Error in getDashboardData:
+2025-05-26T20:02:05.716Z [ERROR]: Error fetching dashboard data:
+2025-05-26T20:02:05.716Z [ERROR]: Error in getDashboardData:
+2025-05-26T20:06:28.839Z [ERROR]: Error in getDashboardData:
+2025-05-26T20:06:28.840Z [ERROR]: Error in getDashboardData:
+2025-05-26T20:08:57.859Z [ERROR]: Error in getDashboardData:
+2025-05-26T20:08:57.860Z [ERROR]: Error in getDashboardData:
+2025-05-26T20:25:25.408Z [ERROR]: No active investments found.
+2025-05-26T20:25:25.408Z [ERROR]: Error retrieving investments: Error: No active investments found.
+2025-05-26T20:25:25.409Z [ERROR]: Error: Failed to retrieve investments: No active investments found.
+2025-05-26T20:37:54.209Z [ERROR]: No active investments found.
+2025-05-26T20:37:54.209Z [ERROR]: Error retrieving investments: Error: No active investments found.
+2025-05-26T20:37:54.209Z [ERROR]: Error: Failed to retrieve investments: No active investments found.
+2025-05-26T20:38:34.124Z [ERROR]: No active investments found.
+2025-05-26T20:38:34.125Z [ERROR]: Error retrieving investments: Error: No active investments found.
+2025-05-26T20:38:34.125Z [ERROR]: Error: Failed to retrieve investments: No active investments found.
+2025-05-26T20:41:27.244Z [ERROR]: No active investments found.
+2025-05-26T20:41:27.245Z [ERROR]: Error retrieving investments: Error: No active investments found.
+2025-05-26T20:41:27.245Z [ERROR]: Error: Failed to retrieve investments: No active investments found.
+2025-05-26T20:56:00.428Z [ERROR]: Create Investment Error: All required fields must be provided.
+2025-05-26T21:44:28.845Z [ERROR]: Error in getHomeData: rateModel.getCurrentRates is not a function
+2025-05-26T21:46:11.302Z [ERROR]: Error in getHomeData: collectionModel.getActiveCollections is not a function
+2025-05-26T21:47:13.759Z [ERROR]: Error getting active collections: Unknown column 'title' in 'field list'
+2025-05-26T21:47:13.759Z [ERROR]: Error in getHomeData: Unknown column 'title' in 'field list'
+2025-05-26T21:48:10.043Z [ERROR]: Error getting active collections: Unknown column 'status' in 'field list'
+2025-05-26T21:48:10.043Z [ERROR]: Error in getHomeData: Unknown column 'status' in 'field list'
+2025-05-26T21:49:43.977Z [ERROR]: Error getting active collections: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-26T21:49:43.978Z [ERROR]: Error in getHomeData: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-26T21:50:40.926Z [ERROR]: Error getting active collections: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-26T21:50:40.927Z [ERROR]: Error in getHomeData: Unexpected token 'u', "uploads\co"... is not valid JSON
+2025-05-26T21:52:09.318Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:52:09.319Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T21:53:02.083Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:53:02.084Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T21:54:05.594Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:54:05.595Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T21:55:35.674Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:55:35.675Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T21:55:52.166Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:55:52.167Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T21:57:23.316Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:57:23.317Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T21:57:26.525Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:57:26.526Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T21:59:16.816Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T21:59:16.817Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:00:19.773Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:00:19.774Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:00:45.622Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:00:45.623Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:01:26.861Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:01:26.862Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:02:37.732Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:02:37.732Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:06:02.901Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:06:02.901Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:06:09.818Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:06:09.818Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:09:07.816Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:09:07.817Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:10:53.557Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:10:53.557Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:12:35.079Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:12:35.079Z [ERROR]: Error in getHomeData: Unknown column 'description' in 'field list'
+2025-05-26T22:13:48.500Z [ERROR]: Error getting active posters: Unknown column 'description' in 'field list'
+2025-05-26T22:13:48.500Z [ERROR]: Error fetching posters: Unknown column 'description' in 'field list'
+2025-05-26T22:13:48.503Z [ERROR]: Error getting active flash news: Unknown column 'title' in 'field list'
+2025-05-26T22:13:48.504Z [ERROR]: Error fetching flash news: Unknown column 'title' in 'field list'
+2025-05-26T22:15:06.307Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T22:15:20.702Z [ERROR]: Failed to initialize collections table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-05-26T22:15:20.705Z [ERROR]: Error connecting to the database: Error: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-06-10T13:47:22.353Z [ERROR]: Failed to initialize posters table: Access denied for user 'ramcarmo_jwl'@'localhost' (using password: YES)
+2025-06-10T13:56:12.828Z [ERROR]: Failed to initialize collections table: Access denied for user 'akilajew_admin'@'localhost' (using password: YES)
+2025-06-10T14:06:23.047Z [ERROR]: Failed to log table structure: Access denied for user 'akilajew_admin'@'localhost' (using password: YES)
+2025-06-10T14:12:15.487Z [ERROR]: Error connecting to the database: Error: Access denied for user 'akilajew_admin'@'localhost' (using password: YES)
+2025-06-10T14:13:29.951Z [ERROR]: Error initializing Intro screens table: Access denied for user 'akilajew_admin'@'localhost' (using password: YES)
+2025-06-10T14:17:43.540Z [ERROR]: Error connecting to the database: Error: Access denied for user 'akilajew_admin'@'localhost' (using password: YES)
+2025-06-10T14:17:43.544Z [ERROR]: Failed to log table structure: Access denied for user 'akilajew_admin'@'localhost' (using password: YES)
+2025-06-10T14:17:43.546Z [ERROR]: Failed to initialize collections table: Access denied for user 'akilajew_admin'@'localhost' (using password: YES)
+2025-06-10T14:19:02.039Z [ERROR]: Error initializing Intro screens table: Access denied for user 'akilajew_flexi'@'localhost' (using password: YES)
+2025-06-14T06:57:49.218Z [ERROR]: Error initializing Intro screens table: Unknown database 'ramcarmo_jwl_db_flexi'
+2025-06-14T07:07:22.103Z [ERROR]: Decryption failed: ReferenceError: decrypt is not defined
+2025-06-14T07:11:27.099Z [ERROR]: Decryption failed: ReferenceError: decrypt is not defined

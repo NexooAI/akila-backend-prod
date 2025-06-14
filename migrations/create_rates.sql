@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS rates (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    gold_rate DECIMAL(10,2) NOT NULL,
+    silver_rate DECIMAL(10,2),
+    show_silver BOOLEAN DEFAULT false,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+); 
