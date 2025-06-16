@@ -248,7 +248,7 @@ akila_initiatePayment: (data) => {
   const encRequest = encrypt(querystring, workingKey);
 
   return `
-    <form id="ccavenueForm" method="post" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
+    <form id="ccavenueForm" method="post" action="https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
       <input type="hidden" name="encRequest" value="${encRequest}" />
       <input type="hidden" name="access_code" value="${accessCode}" />
     </form>
