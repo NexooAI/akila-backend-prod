@@ -159,6 +159,7 @@ exports.ccinitiatePayment= async (req, res) => {
  exports.ccavenueresponse=async (req, res) => {
     try {
       const { encResp } = req.body;
+      console.log("encResp",encResp,req.body)
       const result = paymentModel.handleCCAvenueResponse(encResp);
 
       if (!result.success) {
