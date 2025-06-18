@@ -272,7 +272,7 @@ console.log("paymentData",JSON.stringify(paymentData))
       console.log("encResp",encResp)
       const decrypted=decryptcc(encResp, keyBase64, ivBase64)
       const paymentData = qs.parse(decrypted);
-      
+      console.log("payment data ",paymentData)
       // You could also persist this in DB here
       return {
         success: true,
