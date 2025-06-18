@@ -237,6 +237,7 @@ akila_initiatePayment: (data) => {
     billing_zip: '123456',
     billing_country: 'India',
   };
+  console.log("Redirect URL:", paymentData.redirect_url);
 console.log("paymentData",JSON.stringify(paymentData))
   const workingKey = process.env.REQUEST_WORKING_KEY || 'YOUR_WORKING_KEY';
   const accessCode = process.env.REQUEST_ACCESS_CODE || 'YOUR_ACCESS_CODE';
