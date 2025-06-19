@@ -264,7 +264,8 @@ console.log("paymentData",JSON.stringify(paymentData))
 },
  handleCCAvenueResponse: (encResp) => {
     try {
-      const workingKey = process.env.REQUEST_WORKING_KEY || 'YOUR_WORKING_KEY';
+      const workingKey = process.env.RESPONSE_WORKING_KEY || 'YOUR_WORKING_KEY';
+      console.log("response working key",workingKey)
       //Generate Md5 hash for the key and then convert in base64 string
       var md5 = crypto.createHash('md5').update(workingKey).digest();
       var keyBase64 = Buffer.from(md5).toString('base64');
