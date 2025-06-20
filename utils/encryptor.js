@@ -50,7 +50,8 @@ function encryptcc(plainText, keyBase64, ivBase64) {
 }
 
 function decryptcc(messagebase64, keyBase64, ivBase64) {
-
+    try
+    {
     const key = Buffer.from(keyBase64, 'base64');
     const iv = Buffer.from(ivBase64, 'base64');
 
@@ -58,6 +59,12 @@ function decryptcc(messagebase64, keyBase64, ivBase64) {
     let decrypted = decipher.update(messagebase64, 'hex');
     decrypted += decipher.final();
     return decrypted;
+    }
+    catch(error)
+    {
+        console.error("Decryption failed:", error.toString());
+    }
+   
 }
 
 
