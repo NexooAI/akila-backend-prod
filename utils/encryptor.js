@@ -62,7 +62,7 @@ function decryptcc(messagebase64, keyBase64, ivBase64) {
     }
     catch(error)
     {
-        console.error("Decryption failed:", error.toString());
+        console.log("Decryption failed:", error.toString());
     }
    
 }
