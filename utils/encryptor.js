@@ -49,22 +49,39 @@ function encryptcc(plainText, keyBase64, ivBase64) {
     return encrypted;
 }
 
+// function decryptcc(messagebase64, keyBase64, ivBase64) {
+//     try
+//     {
+//     const key = Buffer.from(keyBase64, 'base64');
+//     const iv = Buffer.from(ivBase64, 'base64');
+
+//     const decipher = crypto.createDecipheriv(getAlgorithm(keyBase64), key, iv);
+//     let decrypted = decipher.update(messagebase64, 'hex');
+//     decrypted += decipher.final();
+//     return decrypted;
+//     }
+//     catch(error)
+//     {
+//         console.log("Decryption failed:", error.toString());
+//     }
+   
+// }
 function decryptcc(messagebase64, keyBase64, ivBase64) {
-    try
-    {
+  try {
     const key = Buffer.from(keyBase64, 'base64');
     const iv = Buffer.from(ivBase64, 'base64');
+    const encryptedBuffer = Buffer.from(messagebase64, 'base64'); // <-- fix here
 
     const decipher = crypto.createDecipheriv(getAlgorithm(keyBase64), key, iv);
-    let decrypted = decipher.update(messagebase64, 'hex');
-    decrypted += decipher.final();
+    decipher.setAutoPadding(true); // Recommended
+
+    let decrypted = decipher.update(encryptedBuffer, undefined, 'utf8'); // <-- fix encoding
+    decrypted += decipher.final('utf8'); // <-- fix encoding
     return decrypted;
-    }
-    catch(error)
-    {
-        console.log("Decryption failed:", error.toString());
-    }
-   
+  } catch (error) {
+    console.log("Decryption failed:", error.toString());
+    throw error;
+  }
 }
 
 
