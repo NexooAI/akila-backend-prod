@@ -23,6 +23,7 @@ exports.encrypt = function(plainText, keyBase64, ivBase64) {
 }
 
 exports.decrypt = function(messagebase64, keyBase64, ivBase64) {
+    
 
     const key = Buffer.from(keyBase64, 'base64');
     const iv = Buffer.from(ivBase64, 'base64');
