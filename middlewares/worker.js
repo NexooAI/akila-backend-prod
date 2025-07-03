@@ -4,7 +4,7 @@ const db = require('../config/db'); // MySQL connection pool
 require('dotenv').config();
 
 // Firebase Admin SDK initialization
-const serviceAccount = require(process.env.FIREBASEPATH);
+const serviceAccount = JSON.parse(process.env.FIREBASEPATH)
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

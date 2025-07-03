@@ -8,7 +8,7 @@ const utc = require('dayjs/plugin/utc');
 dayjs.extend(utc);
 let channel;
 (async () => {
-  const connection = await amqp.connect(process.env.RABBITMQ_URL);
+  const connection = await amqp.connect(process.env.RABBITMQ_URL_AWS);
   channel = await connection.createChannel();
   await channel.assertQueue("notification_queue");
 })();
