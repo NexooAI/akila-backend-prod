@@ -2,16 +2,16 @@
 const mysql = require("mysql2/promise");
 
 const db = mysql.createPool({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "jwl_db_flexi",
+  // host: process.env.DB_HOST || "localhost",
+  // user: process.env.DB_USER || "root",
+  // password: process.env.DB_PASSWORD || "",
+  // database: process.env.DB_NAME || "jwl_db_flexi",
  // database:"ramcarmo_jwl_db_flexi",
   //   prod
-  // host: "localhost",
-  // user: "akilajew_flexi",
-  // password: "26pV-9m5*fRu",
-  // database: "akilajew_gold_savings",
+  host: "localhost",
+  user: "akilajew_flexi",
+  password: "26pV-9m5*fRu",
+  database: "akilajew_gold_savings",
   waitForConnections: true,
   connectionLimit: 10, // Adjust based on traffic
   queueLimit: 0,
