@@ -1,3 +1,4 @@
+const amqp = require('amqplib');
 const cron = require('node-cron');
 const pool = require('../config/db'); // Assuming you have a db.js file for your database connection
 const { differenceInDays, differenceInWeeks, differenceInMonths, addDays, addWeeks, addMonths } = require('date-fns');
@@ -5,6 +6,12 @@ const logger = require('../middlewares/logger')
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 dayjs.extend(utc);
+let channel;
+(async () => {
+  const connection = await amqp.connect(process.env.RABBITMQ_URL);
+  channel = await connection.createChannel();
+  await channel.assertQueue("notification_queue");
+})();
 // const trackMissedPayments = async () => {
 //     // Cron job to run daily (you can adjust the frequency based on your requirement)
 //    cron.schedule('0 0 * * *', async () => {
@@ -346,11 +353,27 @@ WHERE I.status = 'ACTIVE';
             'missed',
             missedDateStr,
           ]);
-
+          
+       
           console.log(`Missed payment for investment_id: ${investment_id} on ${missedDateStr}`);
+           const notification = {
+            userId,
+            investment_id,
+            missedDateStr,
+            title: 'Missed Payment Alert',
+            body: `You missed a gold chit payment due on ${missedDateStr}. Please pay soon.`
+          };
+
+          if (channel) {
+            channel.sendToQueue("notification_queue", Buffer.from(JSON.stringify(notification)));
+            console.log(`Notification queued for user ${userId}`);
+          }
+      
         }
       }
-
+     
+      
+      
       if (missedPayments.length > 0) {
         await pool.query(`
           INSERT INTO missed_payments (

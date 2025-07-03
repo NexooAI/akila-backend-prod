@@ -6,7 +6,7 @@ try {
     // First try to get service account from environment variable
     const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT 
         ? JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)
-        : require(path.join(__dirname, 'service-account.json'));
+        : require(process.env.FIREBASEPATH);
 
     if (!serviceAccount.project_id) {
         throw new Error('Service account must contain project_id');

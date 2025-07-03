@@ -8,7 +8,7 @@ const { swaggerUi, specs, swaggerOptions } = require("./swagger/swagger");
 const http = require("http");
 const { Server } = require("socket.io");
 const { trackMissedPayments, trackMissedPaymentsNew } = require('./middlewares/missedPayments');
-
+const {startWorker}=require('./middlewares/worker')
 // Create an HTTP server
 const server = http.createServer(app);
 const EventEmitter = require("events");
@@ -89,6 +89,7 @@ console.log = (...args) => logger.info(args.join(' '));
 console.error = (...args) => logger.error(args.join(' '));
 // Call the cron job function
 trackMissedPaymentsNew();
+startWorker();
 // 📝 HTTP request logs
 app.use(morgan('combined', {
   stream: {
