@@ -9,8 +9,8 @@ const db = mysql.createPool({
  // database:"ramcarmo_jwl_db_flexi",
   //   prod
   host: "localhost",
-  user: "akilajew_flexi",
-  password: "26pV-9m5*fRu",
+  user: "root",
+  password: "NeXooA!_2025",
   database: "akilajew_gold_savings",
   waitForConnections: true,
   connectionLimit: 10, // Adjust based on traffic
