@@ -24,7 +24,8 @@ const io = new Server(server, {
       "https://admin.dcjewellers.org",
       "http://admin.dcjewellers.org",
       "http://3.109.5.153:8082",
-      "https://nexooai.ramcarmotor.com"
+      "https://nexooai.ramcarmotor.com",
+      "http://reqres.akilajewellers.com"
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
@@ -75,7 +76,8 @@ const corsOptions = {
     "http://admin.dcjewellers.org",
     "http://3.109.5.153:8082",
     "https://3.109.5.153:8082",
-    "https://nexooai.ramcarmotor.com"
+    "https://nexooai.ramcarmotor.com",
+    "http://reqres.akilajewellers.com"
   ],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "Accept", "Origin", "X-Requested-With"],
