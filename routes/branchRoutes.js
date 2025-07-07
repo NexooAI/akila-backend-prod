@@ -112,7 +112,9 @@ const { verifyToken, authorizeRole } = require("../middlewares/authenticate");
  *       500:
  *         description: Server error
  */
-router.post("/",verifyToken,authorizeRole(["Admin", "Super Admin"]), branchController.createBranch);
+router.post("/",
+    // verifyToken,authorizeRole(["Admin", "Super Admin"]), 
+    branchController.createBranch);
 
 /**
  * @swagger
@@ -132,7 +134,9 @@ router.post("/",verifyToken,authorizeRole(["Admin", "Super Admin"]), branchContr
  *       500:
  *         description: Server error
  */
-router.get("/",verifyToken,authorizeRole(["Admin", "Super Admin","Branch Manager","Sales Executive","user"]), branchController.getAllBranches);
+router.get("/",
+    // verifyToken,authorizeRole(["Admin", "Super Admin","Branch Manager","Sales Executive","user"]), 
+    branchController.getAllBranches);
 
 /**
  * @swagger
@@ -159,7 +163,9 @@ router.get("/",verifyToken,authorizeRole(["Admin", "Super Admin","Branch Manager
  *       500:
  *         description: Server error
  */
-router.get("/:id",verifyToken,authorizeRole(["Admin", "Super Admin","Branch Manager","Sales Executive","user"]), branchController.getBranchById);
+router.get("/:id",
+    // verifyToken,authorizeRole(["Admin", "Super Admin","Branch Manager","Sales Executive","user"]), 
+branchController.getBranchById);
 
 /**
  * @swagger
@@ -211,7 +217,9 @@ router.get("/:id",verifyToken,authorizeRole(["Admin", "Super Admin","Branch Mana
  *       500:
  *         description: Server error
  */
-router.put("/:id",verifyToken,authorizeRole(["Admin", "Super Admin"]), branchController.updateBranch);
+router.put("/:id",
+    // verifyToken,authorizeRole(["Admin", "Super Admin"]), 
+    branchController.updateBranch);
 
 /**
  * @swagger
@@ -232,6 +240,8 @@ router.put("/:id",verifyToken,authorizeRole(["Admin", "Super Admin"]), branchCon
  *       500:
  *         description: Server error
  */
-router.delete("/:id",verifyToken,authorizeRole(["Admin", "Super Admin"]), branchController.deleteBranch);
+router.delete("/:id",
+    // verifyToken,authorizeRole(["Admin", "Super Admin"]), 
+    branchController.deleteBranch);
 
 module.exports = router;

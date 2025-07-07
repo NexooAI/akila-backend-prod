@@ -59,8 +59,8 @@ const sendSMS = async (phoneNumber, otp) => {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
-    const apiUrl = `https://api.mybulksms.in/smsotp.php?lg=DCJewellers&key0=z0FEPLfgcQ5zVKS9&key1=1707174141718175093&key2=1701174132304074433&id=DCJEWE&to=${phoneNumber}&uc=1&msg=Dear%20User%20,%20Your%20OTP%20for%20Dc%20Jewellery%20DigitalApp%20registration%20is%20${otp}.%20Thank%20you%20for%20choosing%20Dc%20Jewellery%C2%A0DigitalApp.`;
-
+    // const apiUrl = `https://api.mybulksms.in/smsotp.php?lg=DCJewellers&key0=z0FEPLfgcQ5zVKS9&key1=1707174141718175093&key2=1701174132304074433&id=DCJEWE&to=${phoneNumber}&uc=1&msg=Dear%20User%20,%20Your%20OTP%20for%20Dc%20Jewellery%20DigitalApp%20registration%20is%20${otp}.%20Thank%20you%20for%20choosing%20Dc%20Jewellery%C2%A0DigitalApp.`;
+    const apiUrl = `https://api.mybulksms.in/smsotp.php?lg=Akila&key0=7gVW0z8JyRAC2Hus&key1=1707174546714387446&key2=1701174463618611787&id=AKILAJ&to=${phoneNumber}&uc=1&msg=Dear User , Your OTP for Akila Jewellers DigitalApp registration is ${otp}. Thank you for choosing Akila Jewellers DigitalApp.`
     const response = await axios.get(apiUrl);
     return response.data;
   } catch (error) {
