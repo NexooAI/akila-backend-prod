@@ -143,14 +143,24 @@ exports.createPayment = async (req, res) => {
 };
 exports.ccinitiatePayment= async (req, res) => {
     try {
-      const result = await paymentModel.akila_initiatePayment(req.body);
+      const { userId, amount, investmentId,currency,userEmail,userMobile,userName,chitId,schemeId,payment_frequency_id } = req.body;
+       const orderId = `order_${userId.toString()}_${investmentId}_${Date.now()}`;
+       const data={
+        userId, amount, investmentId,currency,userEmail,userMobile,userName,chitId,schemeId,payment_frequency_id,order_id:orderId
+       }
+      const result = await paymentModel.akila_initiatePayment(data);
 
       if (typeof result === 'object' && result.success === false) {
         return res.status(400).json(result); // validation failure
       }
+      if(result.success)
+      {
+        return res.status(200).json(result)
+      }
 
       // Success - send auto-submitting HTML form
-      return res.status(200).type('html').send(result);
+      //return res.status(200).type('html').send(result);
+      
     } catch (error) {
       console.error("Error initiating payment:", error);
       return res.status(500).json({ success: false, message: "Internal Server Error" });
@@ -158,17 +168,17 @@ exports.ccinitiatePayment= async (req, res) => {
   }
  exports.ccavenueresponse=async (req, res) => {
     try {
-      const { encResp } = req.body;
+      const { encResp,orderNo } = req.body;
       console.log("encResp",encResp,'request',JSON.stringify(req.body))
-      const result = paymentModel.handleCCAvenueResponse(encResp);
-
+      const result =await  paymentModel.handleCCAvenueResponse(encResp,orderNo);
+      console.log("result",result)
       if (!result.success) {
         return res.status(500).json({ success: false, message: result.message });
       }
 
-      const { paymentData, isSuccess } = result;
+      const { paymentData, success } = result;
 
-      if (isSuccess) {
+      if (success) {
         // You may update DB here if not already in model
         return res.status(200).json({ success: true, message: 'Payment Successful', paymentData });
       } else {

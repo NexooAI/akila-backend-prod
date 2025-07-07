@@ -444,6 +444,6 @@ router.delete('/:id',
  paymentController.deletePayment);
 
  router.post('/ccavenue_initiate-payment', paymentController.ccinitiatePayment);
-  router.post('/ccavenue_paymentresponse', paymentController.ccavenueresponse);
+  router.all('/ccavenue_paymentresponse', paymentController.ccavenueresponse);
 
 module.exports = router;

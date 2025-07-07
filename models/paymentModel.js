@@ -6,6 +6,16 @@ const { encrypt, encryptcc, decryptcc } = require('../utils/encryptor');
 const {decrypt}=require('./ccavutil')
  const crypto = require('crypto')
  const qs = require('querystring');
+ const { orderMetaMap } = require("../utils/socket");
+ const investmentmodel=require('../models/investmentModel')
+ const transaction=require('../models/transactionModel')
+ let eventEmitter;
+try {
+  eventEmitter = require("../index").eventEmitter;
+} catch (error) {
+  console.warn("EventEmitter not available:", error.message);
+  eventEmitter = null;
+}
 const Payment = {
  
   create: async (data) => {
@@ -216,23 +226,29 @@ const Payment = {
   },
   
 akila_initiatePayment: (data) => {
-  const { order_id, amount, currency } = data;
+  const { order_id,userId, amount, investmentId,currency,userEmail,userMobile,userName,chitId,schemeId,payment_frequency_id } = data;
 
   if (!order_id || !amount || !currency) {
     return { success: false, message: "Missing required fields" };
   }
+  
 
   const paymentData = {
     merchant_id: process.env.MERCHANT_ID || 'YOUR_MERCHANT_ID',
     order_id,
     currency,
     amount,
+    userId,
+    schemeId,
+    chitId,
+    payment_frequency_id,
+    investmentId,
     redirect_url: process.env.REDIRECT_URL || 'https://yourdomain.com/payment-success',
     cancel_url: process.env.REDIRECT_URL || 'https://yourdomain.com/payment-cancel',
     language: 'EN',
-    billing_name: 'John Doe',
-    billing_email: 'john@example.com',
-    billing_tel: '9999999999',
+    billing_name: userName,
+    billing_email: userEmail,
+    billing_tel: userMobile,
     billing_address: '123 Street',
     billing_city: 'City',
     billing_state: 'State',
@@ -255,18 +271,22 @@ console.log("paymentData",JSON.stringify(paymentData))
   //const encRequest = encrypt(querystring, workingKey);
  const encRequest = encryptcc(querystring, keyBase64, ivBase64);
  //console.log("de",decryptcc(encRequest,keyBase64))
-  return `
-    <form id="ccavenueForm" method="post" action="https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
-      <input type="hidden" name="encRequest" value="${encRequest}" />
-      <input type="hidden" name="access_code" value="${accessCode}" />
-    </form>
-    <script>document.getElementById('ccavenueForm').submit();</script>
-  `;
+   const ccavenueurl = process.env.STAGE_CCAVENUE_URL || 'https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
+  const paymentLink = `${ccavenueurl}&encRequest=${encRequest}&access_code=${accessCode}`;
+  // return `
+  //   <form id="ccavenueForm" method="post" action="https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
+  //     <input type="hidden" name="encRequest" value="${encRequest}" />
+  //     <input type="hidden" name="access_code" value="${accessCode}" />
+  //   </form>
+  //   <script>document.getElementById('ccavenueForm').submit();</script>
+  // `;
+  return {success:true,data:paymentLink}
 },
- handleCCAvenueResponse: (encResp) => {
+ handleCCAvenueResponse: async(encResp,orderNo) => {
     try {
       const workingKey = process.env.REQUEST_WORKING_KEY || 'YOUR_WORKING_KEY';
       console.log("response working key",workingKey)
+      const orderIdValue=orderNo
       //Generate Md5 hash for the key and then convert in base64 string
       var md5 = crypto.createHash('md5').update(workingKey).digest();
       console.log("MD5 Key Length:", md5.length)
@@ -275,6 +295,130 @@ console.log("paymentData",JSON.stringify(paymentData))
       console.log("Type of encResp:", typeof encResp);
       const decrypted = decryptcc(encResp, keyBase64, ivBase64);
       let paymentData = qs.parse(decrypted); 
+       const finalStatus = paymentData.order_status;
+       const statusResponse=paymentData
+        let customMessage = "";
+    let customStatus = "";
+
+
+
+    // Customize the response based on the payment status
+    switch (statusResponse.status) {
+      case "Success":
+        customMessage = "Payment completed successfully.";
+        customStatus = "success";
+        break;
+      case "PENDING":
+      case "PENDING_VBV":
+        customMessage = "Payment is pending. Please wait for confirmation.";
+        customStatus = "pending";
+        break;
+      case "AUTHORIZATION_FAILED":
+        customMessage = "Payment authorization failed. Please check your payment details.";
+        customStatus = "failure";
+        break;
+      case "AUTHENTICATION_FAILED":
+        customMessage = "Payment authentication failed. Please check your credentials.";
+        customStatus = "failure";
+        break;
+      default:
+        customMessage = `Payment status is ${statusResponse.status}. Please contact support for assistance.`;
+        customStatus = "failure";
+        break;
+    }
+     
+    const isSuccess = finalStatus === "Success";
+    const isFailure = ["AUTHORIZATION_FAILED", "AUTHENTICATION_FAILED"].includes(finalStatus);
+    const meta = orderMetaMap.get(orderIdValue);
+     console.log("Stored metadata for:", JSON.stringify(Array.from(orderMetaMap.entries()), null, 2));
+        if (!meta) {
+          console.warn("No metadata found for:", orderIdValue);
+          return {success:false,message:"No metadata found for order"}
+        }
+
+        // Build shared transaction object base
+        const transactionObject = {
+          userId: meta.userId,
+          investmentId: meta.investmentId,
+          schemeId: meta.schemeId,
+          chitId: meta.chitId,
+          accountNumber: meta.accountNumber,
+          orderId: statusResponse?.order_id,
+          amount: meta.paymentAmount,
+          currency: statusResponse?.currency,
+          paymentMethod: statusResponse?.payment_mode,
+          signature: "00",
+          paymentStatus: statusResponse?.status=='CHARGED'?"Success":"Failed",
+          paymentDate: new Date(),
+          status:statusResponse?.status,
+          gatewayTransactionId: statusResponse?.tracking_id,
+          gatewayresponse: JSON.stringify(statusResponse),
+          isManual: meta?.isManual,
+          utr_reference_number: meta?.utr_reference_number
+        };
+
+        // If Payment is Successful
+        if (isSuccess) {
+          const paymentObject = {
+            investmentId: meta.investmentId,
+            userId: meta.userId,
+            paymentAmount: meta.paymentAmount,
+            paymentMethod: statusResponse?.payment_mode,
+            schemeId: meta.schemeId,
+            chitId: meta.chitId,
+            transactionId: statusResponse?.tracking_id,
+            orderId: statusResponse?.order_id,
+            isManual: meta.isManual,
+            utr_reference_number: meta.utr_reference_number
+          };
+
+          try {
+           const paymentResult = await Payment.create(paymentObject);
+
+            if (paymentResult.success) {
+              transactionObject.paymentId = paymentResult.paymentId;
+
+              // Call updateInvestment
+              const updatePayload = {
+                userId: meta.userId,
+                schemeId: meta.schemeId,
+                chitId: meta.chitId,
+                accountName: meta.accountName,
+                accountNo: meta.accountNumber,
+                paymentStatus: 'PAID',
+                paymentAmount: meta.paymentAmount
+              };
+
+              await investmentmodel.updateInvestmentNew(paymentObject.investmentId,updatePayload);
+              console.log("transaction",transactionObject)
+              await transaction.createTransaction(transactionObject);
+            } else {
+              console.error("Payment creation failed:", paymentResult.message);
+            }
+          } catch (error) {
+            console.error("Error during successful payment flow:", error);
+          }
+
+        } else {
+          // Payment Failed → Only log transaction with paymentId = 0
+          transactionObject.paymentId = 0;
+          try {
+            await transaction.createTransaction(transactionObject);
+          } catch (error) {
+            console.error("Transaction creation failed on failure flow:", error);
+          }
+        }
+
+        console.log("completed ")
+    // Emit payment status update event to frontend via WebSocket (if available)
+    if (eventEmitter) {
+      eventEmitter.emit("payment_status_update", {
+        orderId: orderIdValue,
+        status: customStatus,
+        message: customMessage,
+        paymentResponse: statusResponse,
+      });
+    }
       // You could also persist this in DB here
       return {
         success: true,

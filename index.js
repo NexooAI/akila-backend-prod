@@ -24,12 +24,14 @@ const io = new Server(server, {
       "https://admin.dcjewellers.org",
       "http://admin.dcjewellers.org",
       "http://3.109.5.153:8082",
-      "https://nexooai.ramcarmotor.com"
+      "https://nexooai.ramcarmotor.com",
+      "http://reqres.akilajewellers.com"
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   },
 });
+const {registerSocketEvents, orderMetaMap}=require('./utils/socket')
 
 module.exports = { io, eventEmitter, server };
 // Import routes
@@ -75,7 +77,8 @@ const corsOptions = {
     "http://admin.dcjewellers.org",
     "http://3.109.5.153:8082",
     "https://3.109.5.153:8082",
-    "https://nexooai.ramcarmotor.com"
+    "https://nexooai.ramcarmotor.com",
+    "http://reqres.akilajewellers.com"
   ],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "Accept", "Origin", "X-Requested-With"],
@@ -90,6 +93,7 @@ console.error = (...args) => logger.error(args.join(' '));
 // Call the cron job function
 trackMissedPaymentsNew();
 startWorker();
+registerSocketEvents(io)
 // 📝 HTTP request logs
 app.use(morgan('combined', {
   stream: {
