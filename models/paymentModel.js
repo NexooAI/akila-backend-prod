@@ -303,7 +303,7 @@ console.log("paymentData",JSON.stringify(paymentData))
 
 
     // Customize the response based on the payment status
-    switch (statusResponse.status) {
+    switch (statusResponse.order_status) {
       case "Success":
         customMessage = "Payment completed successfully.";
         customStatus = "success";
@@ -322,7 +322,7 @@ console.log("paymentData",JSON.stringify(paymentData))
         customStatus = "failure";
         break;
       default:
-        customMessage = `Payment status is ${statusResponse.status}. Please contact support for assistance.`;
+        customMessage = `Payment status is ${statusResponse.order_status}. Please contact support for assistance.`;
         customStatus = "failure";
         break;
     }
