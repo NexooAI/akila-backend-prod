@@ -356,7 +356,7 @@ exports.getInvestmentsByUser = async (userId) => {
         c.ACTIVE, 
         c.METID, 
         c.GROUPCODE, 
-        COALESCE(t.installment, 0) AS lastInstallment
+       MAX(COALESCE(t.installment, 0)) AS lastInstallment
       FROM investments i
       LEFT JOIN schemes s ON i.schemeId = s.id
       LEFT JOIN (
