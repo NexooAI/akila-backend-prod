@@ -144,7 +144,7 @@ exports.createPayment = async (req, res) => {
 exports.ccinitiatePayment= async (req, res) => {
     try {
       const { userId, amount, investmentId,currency,userEmail,userMobile,userName,chitId,schemeId,payment_frequency_id } = req.body;
-       const orderId = `AKORD-${Date.now()}-${userId.toString()}-${investmentId}`;
+       const orderId =`AKORD-${Date.now()}-${userId.toString()}-${investmentId}`;
        const data={
         userId, amount, investmentId,currency,userEmail,userMobile,userName,chitId,schemeId,payment_frequency_id,order_id:orderId
        }
