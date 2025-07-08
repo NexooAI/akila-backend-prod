@@ -110,7 +110,7 @@ const Payment = {
       const frequencyName = frequencyResult ? frequencyResult.name : null;
   console.log("scheme",planTypeName,frequencyName,paymentAmount,fixed)
       // Step 5: If scheme is "fixed", validate payment amount
-      if (planTypeName && planTypeName.toLowerCase() === "fixed") {
+       if (planTypeName && planTypeName.toLowerCase() === "fixed" && firstMonthAmount!=0) {
         if (parseFloat(paymentAmount) !== parseFloat(firstMonthAmount)) {
           await connection.rollback();
           return { error: true, message: `Payment amount should be exactly ₹${firstMonthAmount} for fixed schemes.` };
