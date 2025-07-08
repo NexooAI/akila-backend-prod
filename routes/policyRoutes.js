@@ -66,8 +66,8 @@ const { verifyToken, authorizeRole } = require("../middlewares/authenticate");
  */
 router.post(
   "/",
-  verifyToken,
-  authorizeRole(["Admin", "Super Admin", "user"]),
+  // verifyToken,
+  // authorizeRole(["Admin", "Super Admin", "user"]),
   policyController.createPolicy
 );
 
@@ -94,8 +94,8 @@ router.post(
  */
 router.get(
   "/",
-  verifyToken,
-  authorizeRole(["Admin", "Super Admin", "Branch Manager", "user"]),
+  // verifyToken,
+  // authorizeRole(["Admin", "Super Admin", "Branch Manager", "user"]),
   policyController.getAllPolicies
 );
 
@@ -129,8 +129,8 @@ router.get(
  */
 router.get(
   "/type/:type",
-  verifyToken,
-  authorizeRole(["Admin", "Super Admin", "Branch Manager", "user"]),
+  // verifyToken,
+  // authorizeRole(["Admin", "Super Admin", "Branch Manager", "user"]),
   policyController.getPoliciesByType
 );
 
@@ -161,8 +161,8 @@ router.get(
  */
 router.get(
   "/:id",
-  verifyToken,
-  authorizeRole(["Admin", "Super Admin", "Branch Manager", "user"]),
+  // verifyToken,
+  // authorizeRole(["Admin", "Super Admin", "Branch Manager", "user"]),
   policyController.getPolicyById
 );
 
@@ -201,8 +201,8 @@ router.get(
  */
 router.put(
   "/:id",
-  verifyToken,
-  authorizeRole(["Admin", "Super Admin"]),
+  // verifyToken,
+  // authorizeRole(["Admin", "Super Admin"]),
   policyController.updatePolicy
 );
 
@@ -235,8 +235,8 @@ router.put(
  */
 router.delete(
   "/:id",
-  verifyToken,
-  authorizeRole(["Admin", "Super Admin"]),
+  // verifyToken,
+  // authorizeRole(["Admin", "Super Admin"]),
   policyController.deletePolicy
 );
 
