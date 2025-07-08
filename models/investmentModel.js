@@ -911,7 +911,7 @@ exports.payNowNew = async (userId, investmentId, amount) => {
       return { success: false, message: "No active investments found" };
     }
 
-    const { chitId, schemeId, accountName, accountNo, schemeType } = investments[0];
+    const { chitId, schemeId, accountName, accountNo, schemeType,firstMonthAmount} = investments[0];
 
     // Fetch scheme details to get the payment frequency and scheme type
     const schemeQuery = "SELECT c.*,c.payment_frequency as payment_frequency_id ,s.* FROM chits as c join schemes as s on c.schemeId=s.id WHERE c.id = ?";
@@ -957,7 +957,18 @@ console.log("schemePlanType[0].name",schemePlanType[0].name)
       }
       else
       {
-        return { success: true, message: `Payment not capture under  ${paymentFrequencyvalue}` };
+        
+         const paymentDetails = {
+        userId,
+        investmentId,
+        paymentAmount: firstMonthAmount,
+        schemeId,
+        chitId, // Optional: Include if needed
+        accountNo, // Optional: Include if needed
+        accountName,
+        amount:chits[0].AMOUNT?Number(chits[0].AMOUNT):0
+      };
+        return { success: true, message: `Payment not capture under  ${paymentFrequencyvalue}`,data:paymentDetails };
       }
      
 
@@ -967,7 +978,17 @@ console.log("schemePlanType[0].name",schemePlanType[0].name)
     }
     else
     {
-      return { success: true, message: `User have Flexi payment frequency` };
+       const paymentDetails = {
+        userId,
+        investmentId,
+        paymentAmount: firstMonthAmount,
+        schemeId,
+        chitId, // Optional: Include if needed
+        accountNo, // Optional: Include if needed
+        accountName,
+        amount:chits[0].AMOUNT?Number(chits[0].AMOUNT):0
+      };
+      return { success: true, message: `User have Flexi payment frequency`, data:paymentDetails};
     }
   } catch (error) {
     logger.error(error)
@@ -975,7 +996,6 @@ console.log("schemePlanType[0].name",schemePlanType[0].name)
     return { success: false, message: "Internal server error", error };
   }
 };
-
 
 
 exports.updateInvestment = async (id, investmentData) => {
