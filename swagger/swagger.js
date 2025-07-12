@@ -2,7 +2,7 @@ const swaggerJsdoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 // const baseUrl = "http://localhost:3001";
 // const baseUrl='https://nexooai.ramcarmotor.com/'
-const baseUrl = "http://reqres.akilajewellers.com";
+const baseUrl = "https://api.akilajewellers.com";
 
 const options = {
   definition: {
