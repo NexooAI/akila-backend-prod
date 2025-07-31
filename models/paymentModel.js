@@ -257,8 +257,8 @@ akila_initiatePayment: (data) => {
   };
   console.log("Redirect URL:", paymentData.redirect_url);
 console.log("paymentData",JSON.stringify(paymentData))
-  const workingKey = process.env.REQUEST_WORKING_KEY || 'YOUR_WORKING_KEY';
-  const accessCode = process.env.REQUEST_ACCESS_CODE || 'YOUR_ACCESS_CODE';
+  const workingKey = process.env.PROD_WORKING_KEY || 'YOUR_WORKING_KEY';
+  const accessCode = process.env.PROD_ACCESS_CODE || 'YOUR_ACCESS_CODE';
 
   const querystring = Object.entries(paymentData)
     .map(([key, val]) => `${key}=${encodeURIComponent(val)}`)
@@ -271,7 +271,7 @@ console.log("paymentData",JSON.stringify(paymentData))
   //const encRequest = encrypt(querystring, workingKey);
  const encRequest = encryptcc(querystring, keyBase64, ivBase64);
  //console.log("de",decryptcc(encRequest,keyBase64))
-   const ccavenueurl = process.env.STAGE_CCAVENUE_URL || 'https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
+   const ccavenueurl = process.env.PROD_CCAVENUE_URL || 'https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
   const paymentLink = `${ccavenueurl}&encRequest=${encRequest}&access_code=${accessCode}`;
   // return `
   //   <form id="ccavenueForm" method="post" action="https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
@@ -284,7 +284,7 @@ console.log("paymentData",JSON.stringify(paymentData))
 },
  handleCCAvenueResponse: async(encResp,orderNo) => {
     try {
-      const workingKey = process.env.REQUEST_WORKING_KEY || 'YOUR_WORKING_KEY';
+      const workingKey = process.env.PROD_WORKING_KEY || 'YOUR_WORKING_KEY';
       console.log("response working key",workingKey)
       const orderIdValue=orderNo
       //Generate Md5 hash for the key and then convert in base64 string
